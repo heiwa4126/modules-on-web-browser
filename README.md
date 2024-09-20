@@ -29,8 +29,9 @@ npm run preview # キャッシュを3600秒にして本番風にする
 - GitHub Pages にする。
 - npm モジュールを使ってみる、のは無理そうなのでやめる。素直にバンドラを使うべし。
 
-## メモ: UNPKG と jsDelivr
+## メモ: UNPKG と jsDelivr、あと cdnjs
 
+UNPKG と jsDelivr は
 機械的に npm.js のモジュールが公開されてる(かオンデマンドで変換されてるか)らしい。
 
 例えば [cowsay - npm](https://www.npmjs.com/package/cowsay) だったら
@@ -50,3 +51,9 @@ cowsay はダメだった。
 
 - ESM が使える - [lodash-es CDN by jsDelivr - A CDN for npm and GitHub](https://www.jsdelivr.com/package/npm/lodash-es)
 - ESM が使えない - [lodash CDN by jsDelivr - A CDN for npm and GitHub](https://www.jsdelivr.com/package/npm/lodash)
+
+で、もう 1 つ
+
+- [cdnjs - The #1 free and open source CDN built to make life easier for developers](https://cdnjs.com/)
+
+こっちは機械的に npm.js から変換してるわけじゃないらしい。
