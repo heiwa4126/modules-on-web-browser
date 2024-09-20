@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ESM Example with jsDelivr</title>
+  </head>
+  <body>
+    <h1>ESM Example with jsDelivr</h1>
+    <h2>Original and Shuffled Arrays</h2>
+    <p>Original Array: <span id="original-array" /></p>
+    <p>Shuffled Array: <span id="shuffled-array" /></p>
+    <p><a href=".">[home]</a></p>
+
+    <script type="module">
+      import lodashEs from "https://cdn.jsdelivr.net/npm/lodash-es@4/+esm";
+      const array = [1, 2, 3, 4, 5];
+      const shuffledArray = lodashEs.shuffle(array);
+      document.getElementById("original-array").textContent = array.join(", ");
+      document.getElementById("shuffled-array").textContent =
+        shuffledArray.join(", ");
+    </script>
+  </body>
+</html>
