@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jsDelivr example - jQuery & cowsay</title>
+    <link rel="stylesheet" href="main.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/cowsay@1/build/cowsay.umd.min.js"></script>
+  </head>
+  <body>
+    <h1>jsDelivr example - jQuery & cowsay</h1>
+    <pre id="message">...</pre>
+    <p><a href=".">[home]</a></p>
+
+    <script>
+      const said = cowsay.say({
+        text: "I am a cow on jsDelivr!\nPowered by jQuery",
+      });
+      $("#message").text(said);
+      // jQuery なしでも以下のように書ける。
+      // const messageElement = document.getElementById("message");
+      // messageElement.textContent = said;
+    </script>
+  </body>
+</html>

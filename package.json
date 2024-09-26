@@ -8,7 +8,7 @@
 		"preview": "http-server ./src --cache=3600",
 		"format": "biome format --write . && prettier . --write",
 		"lint": "biome lint .",
-		"check": "biome check --write . && prettier . --check"
+		"check": "biome check --write . && prettier . --write"
 	},
 	"keywords": ["demo"],
 	"author": "",

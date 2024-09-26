@@ -5,6 +5,9 @@ pnpm-lock.yaml
 
 # Files that Biome supports fully (2024-09)
 *.js
+*.mjs
+*.cjs
+*.ts
 *.ts
 *.jsx
 *.tsx

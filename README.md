@@ -43,7 +43,7 @@ UNPKG と jsDelivr は
 
 ESM (import 文 で読めるやつ) に関しては、対応してるモジュールとそうでないのがある
 (ESM のサンプルは `src/esm-example.html`)。
-cowsay はダメだった。
+cowsay はダメだった。→ 　ダメじゃなかった。[src/jsdeliver-jquery-cowsay-esm.html](src/jsdeliver-jquery-cowsay-esm.html)参照
 
 どうやって ESM 対応か知るのかは不明。元の npm.js 見る?
 →
