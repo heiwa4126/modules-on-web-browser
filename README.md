@@ -23,11 +23,11 @@ npm run preview # キャッシュを3600秒にして本番風にする
 
 ## TODO
 
-- CDN にあるパッケージも使ってみる。✅
+- [x] CDN にあるパッケージも使ってみる
   - [UNPKG](https://unpkg.com/)
   - [jsDelivr - A free, fast, and reliable CDN for JS and open source](https://www.jsdelivr.com/)
-- GitHub Pages にする。
-- npm モジュールを使ってみる、のは無理そうなのでやめる。素直にバンドラを使うべし。
+- [ ] GitHub Pages にする。
+- [ ] npm モジュールを使ってみる、のは無理そうなのでやめる。素直にバンドラを使うべし。
 
 ## メモ: UNPKG と jsDelivr、あと cdnjs
 
@@ -41,7 +41,7 @@ UNPKG と jsDelivr は
 
 が存在する。
 
-ESM (import 文 で読めるやつ) に関しては、対応してるモジュールとそうでないのがある
+ESM (import 文で読めるやつ) に関しては、対応してるモジュールとそうでないのがある
 (ESM のサンプルは `src/esm-example.html`)。
 cowsay はダメだった。→ 　ダメじゃなかった。[src/jsdeliver-jquery-cowsay-esm.html](src/jsdeliver-jquery-cowsay-esm.html)参照
 
